@@ -1,0 +1,115 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	min-height: 0;
+}
+
+.sort-public-wrap .top-img img{
+	display: block;
+	width: 100%;
+}
+.sort-public-wrap .container{
+	padding: 2%;
+}
+.sort-public-wrap .container a{
+	display:block;
+}
+.sort-public-wrap .container ul li{
+	float: left;
+	margin-bottom: 0.2rem;
+	margin-right: 2%;
+	width: 32%;
+	background-color: #fff;
+}
+.sort-public-wrap .container ul li:nth-of-type(3n){
+	margin-right: 0;
+}
+.sort-public-wrap .container ul li .box-l{
+	font-size: 12px;
+	color: #888;
+	height: 1.6rem
+	line-height: 0.4rem;
+}
+.sort-public-wrap .container ul li .box-l p:first-of-type{
+	color: #333;
+	font-size: 0.4rem;
+	height: 0.6rem;
+	width: 100%;
+	text-align: center;
+	line-height: 0.6rem;
+}
+.sort-public-wrap .container ul li .box-l p:nth-of-type(2){
+	padding-bottom: 0.2rem;
+	box-sizing: border-box;
+	/*padding-right: 0.1rem;
+	float: left;
+	width: 50%;*/
+	text-align: right;
+	padding:0 0.2rem 0.2rem 0.2rem;
+	text-align:center;
+}
+.sort-public-wrap .container ul li .box-l p:nth-of-type(3){
+	padding-left: 0.1rem;
+	float: left;
+	box-sizing: border-box;
+	/*width: 50%;*/
+	text-align: left;
+}
+.sort-public-wrap .container ul li .box-l p:nth-of-type(4){
+	float: left;
+}
+.sort-public-wrap .container ul li:last-of-type .box-l p:nth-of-type(2){
+	width: 100%;
+	text-align: center;
+}
+.top-img-box{
+	padding-top: 0.4rem;
+}
+.top-img{ 
+	text-align:center;
+	color:#FF8904;
+	background:#fff;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	height:1rem;
+	line-height:1rem;
+	font-weight:normal;
+	margin: 0 2%;
+	font-size: 0.4rem;
+}
+.sort-public-wrap .container ul li .box-r{
+	width: 100%;
+	height: 2rem;
+	background-repeat: no-repeat;
+	background-size: 1.6rem auto;
+	background-position: center;
+}
+.sort-public-wrap .container ul li.box1 .box-r{
+	background-image: url(../img/sort1_icon.png);
+}
+.sort-public-wrap .container ul li.box2 .box-r{
+	background-image: url(../img/sort2_icon.png);
+}
+.sort-public-wrap .container ul li.box3 .box-r{
+	background-image: url(../img/sort3_icon.png);
+}
+.sort-public-wrap .container ul li.box4 .box-r{
+	background-image: url(../img/sort4_icon.png);
+}
+.sort-public-wrap .container ul li.box5 .box-r{
+	background-image: url(../img/sort5_icon.png);
+}
+.sort-public-wrap .container ul li.box6 .box-r{
+	background-image: url(../img/sort6_icon.png);
+}
+.sort-public-wrap .container ul li.box7 .box-r{
+	background-image: url(../img/sort7_icon.png);
+}
+.sort-public-wrap .container ul li.box8 .box-r{
+	background-image: url(../img/sort8_icon.png);
+}
+.sort-public-wrap .container ul li.box9 .box-r{
+	background-image: url(../img/sort9_icon.png);
+}

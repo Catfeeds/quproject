@@ -1,0 +1,231 @@
+/***********************/
+/*登录注册*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 100%;
+}
+.wrap .login{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+.wrap .login .logo{
+	width: 100%;
+	height: 6rem;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-size: 30% auto;
+	background-position: center;
+}
+.wrap .login .phone{
+	margin: 0 0.4rem;
+	box-sizing: border-box;
+	height: 1.2rem;
+	background: #fff;
+	border-bottom: 1px #ccc solid;
+}
+.wrap .login .phone .phone_icon{
+	display: inline-block;
+	float: left;
+	width: 0.8rem;
+	height: 1.2rem;
+	background: url(../img/phone_icon.png) no-repeat;
+	background-size: auto 0.8rem;
+	background-position: center;
+}
+.wrap .login .phone input{
+	margin: 0.2rem;
+	float: left;
+	margin-left: 0.4rem;
+	width: 74%;
+	height: 0.8rem;
+	border: none;
+	font-size: 0.4rem;
+	color: #444;
+}
+.wrap .login .phone input::-webkit-input-placeholder { 
+    color:#b6b6b7;
+}
+.wrap .login .phone .cancel_icon{
+	display: inline-block;
+	margin-top: 0.3rem;
+	float: right;
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../img/cancel_icon.png) no-repeat;
+	background-size: cover;
+}
+.wrap .login .pwd{
+	margin: 0 0.4rem;
+	margin-top: 2px;
+	height: 1.2rem;
+	background: #fff;
+	border-bottom: 1px #ccc solid;
+}
+.wrap .login .pwd .pwd_icon{
+	display: inline-block;
+	float: left;
+	width: 0.8rem;
+	height: 1.2rem;
+	background: url(../img/password_icon.png) no-repeat;
+	background-size: auto 0.6rem;
+	background-position: center;
+}
+.wrap .login .pwd input{
+	margin: 0.2rem;
+	float: left;
+	margin-left: 0.4rem;
+	width: 74%;
+	height: 0.8rem;
+	border: none;
+	font-size: 0.4rem;
+	color: #333;
+}
+.wrap .login .pwd input::-webkit-input-placeholder { 
+    color:#b6b6b7;
+}
+.wrap .login .pwd .cancel_icon{
+	display: inline-block;
+	margin-top: 0.3rem;
+	float: right;
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../img/cancel_icon.png) no-repeat;
+	background-size: cover;
+}
+.wrap .login .login_btn{
+	display: inline-block;
+	margin: 0 4%;
+	width: 92%;
+	background: #FF8904;
+	border-radius: 4px;
+}
+.wrap .login .login_btn a{
+	display: block;
+	color: #fff;
+	padding: 0.2rem 0;
+	text-align: center;
+	font-size: 0.4rem;
+}
+.wrap .login .bottom_btn{
+	display: inline-block;
+    margin: 2rem 4% 0 4%;
+    width: 92%;
+    border-radius: 4px;
+	text-align:right;
+}
+.wrap .login .bottom_btn a{
+	color:#FF8904;
+	padding:0 0.2rem;
+	font-size:0.35rem;
+}
+.wrap .login .bottom_btn span.dotted {
+    color: #FF8904;
+    margin: 0 0.2rem;
+}
+.wrap .login .register_btn{
+	display: inline-block;
+	margin-left: 4%;
+	margin-top: 2%;
+	width: 45%;
+	background: #dd5b5f;
+	border-radius: 4px;
+}
+.wrap .login .register_btn a{
+	display: block;
+	padding: 0.2rem 0;
+	color: #fff;
+	text-align: center;
+	font-size: 0.4rem;
+}
+.wrap .login .forget_btn{
+	display: inline-block;
+	margin-left: 1%;
+	margin-top: 6px;
+	width: 45%;
+	background: #75c9d7;
+	border-radius: 4px;
+}
+.wrap .login .forget_btn a{
+	display: block;
+	padding: 0.2rem 0;
+	color: #fff;
+	text-align: center;
+	font-size: 0.4rem;
+}
+
+.Validform_checktip{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.35rem;
+	color: red;
+	padding: 0.1rem 0.4rem 0.1rem 0;
+	margin-left:0.4rem;
+}
+
+
+
+
+.wrap .reg .top-btn{	line-height: 1rem;	border-bottom: 1px #eee solid;	padding: 0.4rem 0.8rem 0.2rem 0.8rem;}
+.wrap .reg .top-btn input{	display: none;}
+.wrap .reg .top-btn label{	display: inline-block;	width: 30%;	margin:0 9%;	height: 1rem;	line-height: 1rem;	text-align: center;	background-color: #fff;	color: #333;	font-size:0.35rem;	border:1px solid #fff;}
+.wrap .reg .top-btn input:checked+label{	border:1px solid #FF8904;	color: #FF8904;}
+.wrap .reg .input-box{	padding: 0.2rem 0.2rem 0.2rem 0;	box-sizing: border-box;	margin-left: 0.4rem; position:relative;}
+.top-line{position:relative;}
+.wrap .reg .input-box:before,.top-line:before{content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 0;
+	}
+.wrap .reg .input-box.first:before{ border: none;}
+.wrap .reg .input-box span.title{	color:#999;	padding-right:0.1rem; line-height: 0.8rem;}
+.wrap .reg .input-box input{	width: 6rem;	height: 0.8rem;	font-size: 0.35rem;	border: none;}
+
+.wrap .reg .input-box a{	padding: 0.2rem 0.1rem;	float: right;	color: #fff;	font-size: 0.3rem;	color:#FD9F09;}
+.wrap .reg .input-box a#off{	display: none;}
+.wrap .reg .sub-btn{	display: inline-block;	margin: 0 4%;	width: 92%;	background: #FF8904;	border-radius: 4px;	margin-bottom: 0.4rem;}
+.wrap .reg .sub-btn a{	display: block;    color: #fff;    padding: 0.2rem 0;    text-align: center;    font-size: 0.4rem;}
+.pull-left{	float: right;	margin-right: 0.4rem;	margin-top: 0.4rem;}
+.pull-left a{	color: #FF8904;}
+
+
+/*注册*/
+.wrap .reg .top{ position:relative;width: 100%;height: 1rem;background-color: #fff;line-height: 1rem;text-align: center;font-size: 0.4rem;color: #333;}
+.wrap .reg .top strong{ line-height: 1rem;text-align: center;font-size: 0.4rem;color: #333; font-weight:normal;}
+.wrap .reg .top .il{ position:absolute; left:0px; top:0px; color:#FD9F09;}
+.wrap .reg .top .ir{ position:absolute; right:0px; top:0px; color:#FD9F09;}
+.wrap .reg .top span{ line-height: 1rem; color:#999; font-size:0.4rem; padding:0 4%;}
+.wrap .reg .top span.prev:before{content: "";display: inline-block;width: 0.25rem;height: 0.25rem;border-width: 1px 1px 0 0;border-color:#FD9F09;border-style: solid;transform: rotate(-135deg); }
+.wrap .reg { display:block; width:100%; height:100%; clear:both; overflow:hidden;}
+.wrap .reg .items{width:200%; clear:both; position:absolute; }
+.wrap .reg .page{ width:50%; float:left;}
+
+.wrap .reg .control {margin-top: 0.2rem;clear: both;overflow: hidden;background-color: #fff;}
+.wrap .reg .control_text {	font-size: 0.4rem;	width: 100%;	position: relative;	background: #fff;	line-height: 1rem;	height: 1rem;	text-align:center;}
+.wrap .reg .control_text_primary {padding:0 4%;text-align:left;color: #999;font-size: 0.4rem;}
+.wrap .reg .control_text.first:before {border: none;}
+.wrap .reg .weui_check:checked + .weui_icon_checked:before {display: block;content: '\EA08';color: #FF8904;font-size: 0.4rem;line-height: 1rem;}
+.wrap .reg .weui_cell_ft {text-align: right;color: #888;float: right;position: absolute;right: 0.4rem;top: 0px;}
+.wrap .reg .weui_cell_ft span{ display:inline-block;}
+.wrap .reg .notice{ padding:0.8rem 0.4rem; font-size:0.4rem; color:#999; line-height:0.5rem;}
+.wrap .reg .notice p{ font-size:0.4rem; line-height:0.6rem;}
+/*注册*/
+.wrap .reg .input-box .radioinput{
+	margin-left:.2rem;
+	height:.5rem;
+	width:.5rem;
+	position: relative;
+	top:.1rem;
+}

@@ -1,0 +1,75 @@
+/*活动管理*/
+
+html,body{
+	background-color: #efeff4;
+	height:100%;
+}
+
+.bus-manage .navbar{
+	background:#fff;
+	height:1rem;
+	line-height:1rem;
+	display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    -moz-box-pack: start;
+    -webkit-box-pack: start;
+    box-pack: start;
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
+}
+
+.bus-manage .navbar li{
+	display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    text-align: center;
+}
+
+.bus-manage .navbar li span{
+	display: block;
+    width:60%;
+	margin:0 20%;
+    text-align: center;
+}
+.bus-manage .navbar li.on span{	border-bottom:1px solid #FF8904;}
+.bus-manage .control{ margin-top: 0.2rem; clear: both; overflow: hidden; background-color: #fff;}
+.bus-manage .control dt{ padding: 0 0.2rem;	line-height:1rem; color:#999; font-size:0.4rem;}
+.bus-manage .control dt span{ border-left:0.1rem solid #FF8904; padding-left: 0.2rem; font-size:0.4rem; color: #333;}
+.bus-manage .control dt a{ float:right; padding: 0 0.2rem; font-size:0.35rem; color:#666;}
+.bus-manage .control dd{ position: relative; line-height:0.6rem; padding:0.2rem;}
+.bus-manage .control dd:before {    content: " ";    position: absolute;    left: 0;    top: 0;    width: 96%;    height: 1px;    border-top: 1px solid #D9D9D9;    color: #D9D9D9;    -webkit-transform-origin: 0 0;    transform-origin: 0 0;    -webkit-transform: scaleY(0.5);    transform: scaleY(0.5);    left: 0.2rem;}
+.bus-manage .control dd a.publisher{ display:block; margin:0; text-align:center; vertical-align:middle; padding: 0.2rem;}
+.bus-manage .control dd a.publisher img{ width:0.8rem; height:0.8rem; border-radius: 50%;  vertical-align:middle;}
+.bus-manage .control dd a.publisher p{ line-height:0.6rem; height:0.6rem; overflow:hidden; color:#333;}
+.control_flr{ overflow:hidden;}
+.control_flr .il{ float:left; width:75%;}
+.control_flr .il .l{ float:left; width:2.8rem; height:1.8rem; background-repeat:no-repeat; background-size:cover;  }
+.control_flr .il .r{ padding-left: 3rem;}
+.control_flr .il .r h2{ height: 1.2rem; }
+
+.control_flr .il h2{ line-height:0.6rem; color: #333; font-weight: normal; font-size: 0.4rem; height:1.2rem; overflow:hidden; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; word-break: break-all; }
+.control_flr .il p{ color:#999; line-height:0.6rem;}
+.control_flr .il p span{ display:block; width:49%; float:left;}
+.control_flr .il span i{ padding-right:5%; font-size:0.4rem;}
+.control_flr .ir{ float:right; width:24%; height:1.8rem; border-left: 1px solid #eee;}
+
+
+.control_flr .ir span,.control_flr .ir a{	margin-top: 0.55rem; margin-left: 0.5rem;}
+.control_flr .ir.activity{ float:right; width:24%; height:1.8rem; border-left: 1px solid #eee;}
+.control_flr .ir .attachment a.attent {   margin-top: 0.05rem !important;}
+.btn-orange { font-style: normal; font-size: 0.3rem; background: #FF8904; color:#fff; line-height: 0.4rem; padding: 0.15rem 0.2rem; display: inline-block; text-align: center; border-radius: 3px;}
+.btn-orange.off{ background:#ccc; color:#fff;}
+.control_hli ul li{ padding: 2% 0; height: 0.8rem; line-height: 0.8rem; border-bottom: 1px #eee dotted;}
+.control_hli ul li span.pic{ display:block; float:left; width:0.8rem; height:0.8rem; background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 50%;}
+.control_hli ul li span.name{ display:block; float:left; padding-left:0.1rem; color:#333;}
+.control_hli ul li span.call{ display:block; float:right; padding-right:0.2rem;}
+
+.control_hli ul li span.call span{ font-style: normal; font-size: 0.3rem; background: #ccc; color:#fff; line-height: 0.4rem; padding: 0.15rem 0.4rem; display: inline-block; text-align: center; border-radius: 5%;}
+.control_hli ul li span.call span.on{ background: #FF8904;	color:#fff;}
+.no_enroll{ color:#999; text-align:center;}
+
+.bus-manage-sta{ position:fixed; bottom:0px; left:0px; background:#fff; height:1rem; line-height:1rem; border-top:1px solid #eee; width:96%; padding:0 2%;}
+.bus-manage-sta .ir{ float:right; padding-right:0.2rem; color:#FF8904;}

@@ -1,0 +1,377 @@
+html,body{
+	
+}
+
+/**商务名片**/
+.wrap .buscenter-wrap .top{
+	position: relative;
+	height: 4rem;
+	background-image: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.wrap .buscenter-wrap .top .pic{
+	padding-top: 0.5rem;
+}
+.wrap .buscenter-wrap .top .pic span{
+	margin: 0 auto;
+	display:block;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	background-image: url(../img/person_pic1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.wrap .buscenter-wrap .top .name{
+	margin-top: 0.2rem;
+	color: #fff;
+	font-size: 0.4rem;
+	text-align: center;
+	text-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+.wrap .buscenter-wrap .top .text{
+	padding: 0 10%;
+	margin-top: 0.1rem;
+	color: #fff;
+	font-size: 0.3rem;
+	text-align: center;
+	overflow: hidden;
+	-webkit-line-clamp:2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+}
+.wrap .buscenter-wrap .top .attent_btn{
+	display: block;
+    text-align: center;
+	clear:both;
+}
+.attachment a.attent {
+    float:none;
+}
+.attachment a.chat {
+    font-style: normal;
+    font-size: 0.35rem;
+    color: #FF8904; 
+    line-height: 0.5rem;
+    padding: 0.1rem 0.4rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5%;
+    margin-top: 0.15rem;
+	background:#fff;
+	margin-left:0.4rem;
+}
+.wrap .buscenter-wrap .swiper-container{
+	margin-top:0.1rem;
+}
+.wrap .buscenter-wrap .comment-inner ul {
+    overflow: hidden;
+    margin-top: 0;
+}
+.wrap .buscenter-wrap .comment-inner ul li:first-child{
+	margin-top:0;
+}
+.wrap .buscenter-wrap .tab-nav{
+	width: 100%;
+    height: 1rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    position: relative;
+    background-color: #fff;
+    z-index: 98;
+	border-bottom: 1px solid #eee;
+}
+.wrap .buscenter-wrap .tab-nav li{
+	position: relative;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.35rem;
+    color: #333;
+    border-radius: 0;
+    background-color: #fff;
+}
+.wrap .buscenter-wrap .tab-nav li.current{
+	color: #FF8904;
+    box-sizing: border-box;
+}
+.wrap .buscenter-wrap .tab-nav li.current:after{
+	content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 20%;
+    width: 60%;
+    box-sizing: border-box;
+    height: 0px;
+    border-bottom: 1px solid #FF8904;
+}
+.wrap .buscenter-wrap .tab-nav li after{
+	content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+.wrap .buscenter-wrap .tab-nav.tab-nav-c{
+	position: fixed;
+	top: 1rem;
+	left: 0;
+}
+    
+
+/**商务名片结束**/
+
+
+
+/**活动通用box**/
+.activity-inner ul:first-child{
+	padding: 0 0 2% 0;
+	box-sizing: border-box;
+}
+
+.activity-inner ul:first-child li{
+	position: relative;
+	padding: 0.2rem;
+	border-bottom: 1px #eee solid;
+	background: #fff;
+    margin-top: 0.2rem;
+}
+/*.activity-inner ul:first-child a:last-of-type li{
+	margin-bottom: 1.4rem;
+}*/
+.activity-inner ul:first-child a:first-child li{
+    margin-top: 0;
+}
+.activity-inner ul:first-child li .box_l{
+	float: left;
+	width: 3.2rem;
+	height: 2rem;
+	background-image: url(../img/bustopad.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.activity-inner ul:first-child li .box_r{
+	margin-left: 3.4rem;
+}
+.activity-inner ul:first-child li .box_r .title{
+	padding: 0;
+    height: 1rem;
+    line-height: 0.5rem;
+    font-size: 0.35rem;
+    color: #000;
+    border: none;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.activity-inner ul:first-child li .box_r .time{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.3rem;
+	color: #aaa;
+}
+/**活动通用box结束**/
+
+
+
+
+/**主播的评价**/
+.wrap .comment-wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #efeff4;
+}
+.wrap .comment-wrap .swiper-pagination{
+	height: 1rem;
+	padding: 0.1rem 0;
+	border:1px solid #eee;
+}
+.wrap .comment-wrap .swiper-pagination .swiper-pagination-bullet {
+    line-height:0.4rem;
+	font-size:0.3rem;
+	height:1rem;
+	padding-top: 0.1rem;
+}
+.wrap .comment-wrap .swiper-pagination .swiper-pagination-bullet-active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    box-sizing: border-box;
+    height: 0px;
+    border: none;
+}
+/**主播的评价结束**/
+
+/**商家的评论开始**/
+.wrap .comment-inner{
+	box-sizing: border-box;
+}
+.wrap .comment-inner ul{
+	overflow:hidden;
+	margin-top:1.2rem;
+}
+.wrap .comment-inner ul li{
+	position: relative;
+	color: #7d7b7c;
+	font-size: 0.35rem;
+	border-bottom: 1px #eee solid;
+	border-top: 1px #eee solid;
+	margin:0.1rem 0;
+	background:#fff;
+	padding:0 0.2rem;
+}
+.wrap .comment-inner ul li h2{
+	position: relative;
+}
+.wrap .comment-inner ul li h2 a span{
+	font-weight: normal;
+}
+.wrap .comment-inner ul li h2 >span{
+	position: absolute;
+	right:0px;
+	top:0.275rem;
+	font-weight: normal;
+}
+.wrap .comment-inner ul li div.comment_inner{
+	position:relative;
+}
+.wrap .comment-inner ul li div.comment_inner p{
+	width: 100%;
+	color:#333;
+	font-size:0.35rem;
+	max-height: 1.2rem;
+	line-height: 0.6rem;
+	overflow: hidden;
+	-webkit-line-clamp:2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	padding: 0.2rem 0;
+}
+
+.wrap .comment-inner ul li div.comment_bottom{
+	padding-bottom: 0.2rem;
+	color:#999;
+	line-height:0.5rem;
+	font-size:0.3rem;
+	position:relative;
+	z-index:1;
+}
+.wrap .comment-inner ul li div.comment_bottom p{
+	color:#999;
+	line-height:0.5rem;
+	font-size:0.3rem;
+	overflow:hidden;text-overflow:ellipsis; -o-text-overflow:ellipsis;white-space:nowrap;width:100%;
+}
+.wrap .comment-inner ul li .comment_bottom .time{
+	position: absolute;
+	right: 0.2rem;
+	bottom: 0.2rem;
+	color: #a6a6a7;
+}
+.wrap .comment-inner ul li h3{
+	height: 0.6rem;
+}
+span.boss-star{
+	margin-top: 0.1rem;
+	width: 2.5rem;
+	height: 0.45rem;
+}
+span.boss-star i{
+	width: 0.5rem;
+	height: 0.45rem;
+	background-size: 0.35rem auto;
+}
+.wrap .comment-inner ul li div.comment_inner:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+
+.wrap .comment-inner ul li a{
+	display: block;
+	height: 1rem;
+	line-height: 1rem;
+}
+
+.wrap .comment-inner ul li a span:first-of-type{
+	margin-top: 0.2rem;
+	display: inline-block;
+	float: left;
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+	background-image: url(../img/act_pic.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wrap .comment-inner ul li a span:nth-of-type(2){
+	display: inline-block;
+	margin-left: 0.2rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.4rem;
+	color: #666;
+}
+/**商家的评论结束**/
+
+
+/*我的收藏/我报名的项目开始*/
+.wrap .collect-wrap .top-pic{
+	width: 100%;
+}
+.wrap .collect-wrap .top-pic img{
+	display: block;
+	width: 100%;
+}
+.wrap .collect-wrap h2.title{
+	padding: 0 0.4rem;
+	padding-left: 0.4rem;
+	margin:0;
+	margin-top:0.2rem;
+	box-sizing: border-box;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.4rem;
+	color: #333;
+	background: #fff;
+	font-weight:normal;
+	font-family: "Microsoft YaHei","΢????,Verdana,Arial,Helvetica,sans-serif;
+	border:none;
+}
+.wrap .collect-wrap .title span{
+	border-left:0.1rem solid #FF8904;
+	padding-left:0.2rem;
+}
+.wrap .collect-wrap .main-box{
+	margin-top:0.2rem;
+}
+/*我的收藏/我报名的项目结束*/

@@ -1,0 +1,79 @@
+html,body{
+	height: auto;
+}
+.wrap{
+	min-height: 0;
+}
+.bus a,.zhubo a{
+	display:block;
+}
+.wrap .rank-wrap .main-list ul{
+	padding-bottom: 1.2rem;
+	background-color: #fff;
+}
+.wrap .rank-wrap .main-list ul li{
+	padding: 2% 4%;
+	height: 1.2rem;
+	border-bottom: 1px #eee solid;
+}
+.wrap .rank-wrap .main-list ul li .box_l{
+	position: relative;
+	float: left;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 8px;
+	background-image: url(../img/sort_list.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.wrap .rank-wrap .main-list ul li .box_l:after{
+	content: '';
+	position: absolute;
+	right:-0.15rem;
+	top:-0.15rem;
+	display: inline-block;
+	width: 0.35rem;
+	height: 0.35rem;
+	background-repeat: no-repeat;
+	background-size: 0.35rem auto;
+	background-position: center;
+}
+/*
+.wrap .rank-wrap .main-list ul li.bus .box_l:after{
+	background-image: url(../img/s_bus_icon1.png);
+}
+.wrap .rank-wrap .main-list ul li.zhubo .box_l:after{
+	background-image: url(../img/s_zhubo_icon1.png);
+}*/
+.wrap .rank-wrap .main-list ul li .box_r{
+	margin-left: 1.4rem;
+	height:1.2rem;
+}
+.wrap .rank-wrap .main-list ul li.zhubo .box_r .name{
+	height: 0.75rem;
+	line-height: 0.75rem;
+	color: #333;
+	font-size: 0.4rem;
+}
+.wrap .rank-wrap .main-list ul li.bus .box_r .name{
+	height: 0.75rem;
+	line-height: 0.75rem;
+	color: #FF8904;
+	font-size: 0.4rem;
+}
+.wrap .rank-wrap .main-list ul li .box_r .text{
+	display: inline-block;
+	height: 0.45rem;
+	width: 100%;
+	line-height: 0.45rem;
+	font-size: 0.3rem;
+	color: #999;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	white-space: nowrap;
+}
+
+
+

@@ -1,0 +1,316 @@
+/*我的个人中心*/
+
+html,body{
+	margin: 0;
+	padding: 0;
+	background-color: #efeff4; 
+	height: 100%;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wrap{
+	position: relative;
+	width: 100%;
+	min-height: 0;
+}
+.wrap .bus-login-wrap .top{
+	position: relative;
+	width: 100%;
+	height: 5rem;
+	background-image: url(../img/business_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow:hidden;
+}
+.wrap .bus-login-wrap .top .change_msg{
+	position: absolute;
+	right: 0.4rem;
+	top: 0.4rem;
+	display: inline-block;
+	width: 0.75rem;
+	height: 0.75rem;
+	background-image: url(../img/change_msg_icon.png);
+	background-size: 0.5rem;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.wrap .bus-login-wrap .top a{
+	display: inline-block;
+	width: 100%;
+}
+.wrap .bus-login-wrap .top .headimg{
+	margin: 0.6rem auto 0 auto;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	border: 0.1rem #fec827 solid;
+	border-radius: 50%;
+	background-image: url(../img/appicon200.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.wrap .bus-login-wrap .top .name{
+	margin:0.2rem auto 0 auto;
+	display:block;
+	text-align: center;
+	color: #fff;
+	font-size: 0.5rem;
+}
+.wrap .bus-login-wrap .top ul{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1rem;
+	background-color: rgba(0,0,0,0.5);
+}
+.wrap .bus-login-wrap .top ul a{
+	float: left;
+	box-sizing: border-box;
+	width: 33%;
+	height: 1rem;
+	line-height: 0.6rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.35rem;
+}
+.wrap .bus-login-wrap .top ul a li{
+	margin: 0.2rem 0;
+	border-right: 1px #fff solid;
+}
+.wrap .bus-login-wrap .top ul a:last-of-type li{
+	border-right: none;
+}
+.wrap .bus-login-wrap .activity-list{
+	padding: 0 4% 2% 4%;
+	background-color:#fff;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	margin-top: 0.2rem;
+}
+.wrap .bus-login-wrap .activity-list .list-tit{
+	padding: 0.2rem 0;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.4rem;
+	color: #757475;
+	border-bottom: 1px #eee solid;
+}
+.wrap .bus-login-wrap .activity-list .list-tit i{
+	display: inline-block;
+	float: left;
+	width: 1rem;
+	height: 0.6rem;
+	background-image: url(../img/my_activity_icon.png);
+	background-repeat: no-repeat;
+	background-size: 0.6rem auto;
+	background-position: center;
+}
+.wrap .bus-login-wrap .activity-list .list-tit span:last-of-type{
+	float: right;
+	height: 0.6rem;
+	color: #a5a5a5;
+	line-height: 0.6rem;
+	font-size: 0.3rem;
+}
+.wrap .bus-login-wrap .activity-list .list-tit span:last-of-type i{
+	margin-top: 0.2rem;
+	float: right;
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	border-width: 1px 1px 0 0;
+	border-color: #a5a5a5;
+	border-style: solid;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	background: none;
+}
+.wrap .bus-login-wrap .activity-list ul{
+	padding: 2% 0;
+}
+.wrap .bus-login-wrap .activity-list ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	color: #666;
+	font-size: 0.35rem;
+}
+.wrap .bus-login-wrap .activity-list ul li i{
+	display: block;
+	width: 100%;
+	height: 0.8rem;
+	background-repeat: no-repeat;
+	background-size: auto 0.6rem;
+	background-position: center;
+}
+.wrap .bus-login-wrap .activity-list ul a:first-of-type i{
+	position: relative;
+	background-image: url(../img/fire_icon.png);
+}
+.wrap .bus-login-wrap .activity-list ul a:nth-of-type(2) i{
+	position: relative;
+	background-image: url(../img/ing_off_icon.png);
+}
+.wrap .bus-login-wrap .activity-list ul a:nth-of-type(3) i{
+	position: relative;
+	background-image: url(../img/waite_icon_off.png);
+}
+.wrap .bus-login-wrap .activity-list ul a:nth-of-type(4) i{
+	background-image: url(../img/finish_icon2.png);
+}
+.wrap .bus-login-wrap .activity-list ul a i span{
+	position: absolute;
+	top: 0.1rem;
+	right:25%;
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
+	background-color: red;
+	font-size: 0.3rem;
+	font-style: normal;
+}
+.wrap .bus-login-wrap .line{
+	width: 100%;
+	height:0.2rem;
+	background-color: #eee;
+}
+.wrap .bus-login-wrap .sort-list{
+	background-color:#fff;
+	border-width: 1px 0 1px 0;
+	border-color: #eee;
+	border-style: solid;
+}
+.wrap .bus-login-wrap .sort-list ul li{
+	height: 1rem;
+	line-height: 1rem;
+	color: #757475;
+	font-size: 0.35rem;
+	border-bottom: 1px #eee solid;
+	margin:0 4%;
+}
+.wrap .bus-login-wrap .sort-list ul li.last-li{
+	border: none;
+}
+.wrap .bus-login-wrap .sort-list ul li i{
+	float: left;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background-repeat: no-repeat;
+	background-size: 0.6rem auto;
+	background-position: center;
+}
+.wrap .bus-login-wrap .sort-list ul i.myzhubo{
+	background-image: url(../img/my_zhubo.png);
+}
+.wrap .bus-login-wrap .sort-list ul i.usertype{
+	background-image: url(../img/num_sort_icon.png);
+}
+.wrap .bus-login-wrap .sort-list ul i.agent{
+	background-image: url(../img/jingjiren_icon.png);
+}
+.wrap .bus-login-wrap .sort-list ul i.jifen{
+	background-image: url(../img/jifen_icon.png);
+}
+.wrap .bus-login-wrap .sort-list ul i.mobile{
+	background-image: url(../img/tel_num_icon.png);
+}
+.wrap .bus-login-wrap .sort-list ul i.tags{
+	background-image: url(../img/tags_icon.png);
+}
+.wrap .bus-login-wrap .sort-list ul i.photos{
+	background-image: url(../img/puctures_icon.png);
+}
+.wrap .bus-login-wrap .sort-list ul li span:last-of-type{
+	float: right;
+}
+
+
+.wrap .bus-login-wrap .sort-list ul li span:last-of-type:after {
+    content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 0.25rem;
+    width: 0.25rem;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    position: relative;
+    top: -2px;
+    top: -1px;
+    margin-left: .3em;
+}
+.wrap .bus-login-wrap .chunk{
+	display:block;
+	height: 1rem;
+	line-height: 1rem;
+	color: #757475;
+	background-color:#fff;
+	font-size: 0.35rem;
+	padding: 0 4%;
+	border-width: 1px 0 1px 0;
+	border-color: #ccc;
+	border-style: solid;
+}
+.wrap .bus-login-wrap .chunk i{
+	float: left;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background-image: url(../img/my_company_icon.png);
+	background-repeat: no-repeat;
+	background-size: 0.6rem auto;
+	background-position: center;
+}
+.wrap .bus-login-wrap .chunk span:last-of-type{
+	float: right;
+}
+
+.wrap .bus-login-wrap .chunk span:last-of-type:after{
+	content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 0.25rem;
+    width: 0.25rem;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    position: relative;
+    top: -2px;
+    top: -1px;
+    margin-left: .3em;
+}
+.wrap .bus-login-wrap .exit-btn{
+	box-sizing: border-box;
+	width: 100%;
+}
+.wrap .bus-login-wrap .exit-btn a{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.4rem;
+	height: 1rem;
+    line-height: 1rem;
+    color: #000;
+    background-color: #fff;
+    border-width: 1px 0 1px 0;
+    border-color: #eee;
+    border-style: solid;
+}
+
+/*主播个人首页*/

@@ -1,0 +1,163 @@
+html{
+	height: 100%;
+}
+.wrap .sms-wrap .top-box{
+	position: relative;
+	padding: 0.4rem;
+	padding-bottom: 1.2rem;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #fff;
+}
+.wrap .loading{
+	text-align:center;
+	font-size:0.35rem;
+	color:#999;
+	line-height:0.6rem;
+	display:none;
+}
+.timename{
+	text-align:center;
+	font-size:0.3rem;
+	color:#666;
+	line-height:0.6rem;
+	font-weight:normal;
+}
+.wrap .loading i{
+	font-size:0.35rem;
+	padding:0 !important;
+}
+.sms-wrap{
+	padding-top:0.6rem;
+}
+.wrap .sms-wrap .top-box span{
+	display: inline-block;
+	float: left;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-image: url(../images/act_pic.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wrap .sms-wrap .top-box p{
+	margin-left: 1.2rem;
+	color: #777;
+	font-size: 0.35rem;
+}
+.wrap .sms-wrap .top-box a{
+	position: absolute;
+	padding: 4px 20px;
+	display: inline-block;
+	color: #8b8b8c;
+	font-size: 0.35rem;
+	border: 1px #8b8b8c solid;
+	border-radius: 4px;
+}
+.wrap .sms-wrap .top-box a:first-of-type{
+	right: 2.4rem;
+	bottom: 0.2rem;
+}
+.wrap .sms-wrap .top-box a:last-of-type{
+	right: 0.4rem;
+	bottom: 0.2rem;
+}
+.wrap .sms-wrap .text-box{
+	margin-bottom: 0.5rem;
+	margin-top:0.1rem;
+	width: 100%;
+}
+.wrap .sms-wrap .text-box p{
+	position: relative;
+	padding: 0.2rem 0.3rem;
+	display: inline-block;
+	border-radius: 4px;
+}
+.wrap .sms-wrap .text-box img{
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 8px;
+	font-size: 0.3rem;
+}
+.wrap .sms-wrap .text-box1 p{
+	float: right;
+	max-width: 60%;
+	min-height: 0.45rem;
+	line-height: 0.45rem;
+	color: #fff;
+	background-color: #FF8904;
+}
+.wrap .sms-wrap .text-box1 p:after{
+	content: '';
+	position: absolute;
+	right: -0.35rem;
+	top: 4px;
+	display: inline-block;
+	border: 0.2rem #FF8904 solid;
+	border-color: transparent transparent transparent #FF8904;
+}
+.wrap .sms-wrap .text-box2 p{
+	float: left;
+	max-width: 60%;
+	min-height: 0.45rem;
+	color: #8d8d8e;
+	background-color: #fff;
+}
+.wrap .sms-wrap .text-box2 p:before{
+	content: '';
+	position: absolute;
+	left: -0.35rem;
+	top: 4px;
+	display: inline-block;
+	border: 0.2rem #fff solid;
+	border-color: transparent #fff transparent transparent;
+}
+.wrap .sms-wrap .text-box1 img{
+	margin-right: 0.3rem;
+	margin-left: 0.35rem;
+	float: right;
+}
+.wrap .sms-wrap .text-box2 img{
+	float: left;
+	margin-left: 0.3rem;
+	margin-right: 0.35rem;
+}
+.wrap .empty{
+	width: 100%;
+	height: 1.2rem;
+}
+.wrap .sms-box{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background-color:#eee;
+}
+.wrap .sms-box [type='text']{
+	margin-top: 0.2rem;
+	margin-left: 0.4rem;
+	padding-left: 0.2rem;
+	width: 75%;
+	height: 0.8rem;
+	font-size: 0.35rem;
+	border: none;
+	border-radius: 8px;
+	font-size: 0.35rem;
+}
+.wrap .sms-box a{
+	margin: 0.2rem 0.4rem 0 0;
+	display: inline-block;
+	float: right;
+	width: 1.2rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	background-color: rgba(255,137,4,0.7);
+}

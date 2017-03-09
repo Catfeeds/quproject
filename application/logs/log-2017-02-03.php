@@ -1,0 +1,4 @@
+ERROR - 2017-02-03 19:37:04 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Main' does not have a method 'error' /Library/WebServer/Documents/www/quguoren/system/core/CodeIgniter.php 514
+ERROR - 2017-02-03 19:41:10 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Main' does not have a method 'error' /Library/WebServer/Documents/www/quguoren/system/core/CodeIgniter.php 514
+ERROR - 2017-02-03 19:41:10 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Main' does not have a method 'error' /Library/WebServer/Documents/www/quguoren/system/core/CodeIgniter.php 514
+ERROR - 2017-02-03 19:41:10 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Main' does not have a method 'error' /Library/WebServer/Documents/www/quguoren/system/core/CodeIgniter.php 514
