@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://local.quguoren.com';
+$config['base_url'] = 'http://www.testquguoren.com';
 
 /*
 |--------------------------------------------------------------------------
