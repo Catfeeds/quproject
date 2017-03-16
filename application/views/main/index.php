@@ -3,7 +3,7 @@
 <body style="font-size: 12px;">
     <div class="wrap activity-index" style="background:#efeff4;">
         <!--头部-->
-        <div class="index_top">
+ <div class="index_top">
     <!--<a class="location" id="position" href="#"><span id="city-index" data-id="0">不限</span><i class="fa fa-angle-down"></i></a>-->
     <div class="index_search">
     <form id="test">
@@ -94,7 +94,7 @@ $('#test').submit(function(){
 
 
 <div class="headerfull"></div>
-<!--定位-->   
+<!--定位 暂时隐藏-->   
 <div class="position-wrap" style="display: none;z-index:99999">
     <div class="position-header">
         <a class="back" id="back" href="javascript:;"><i class="icon fa fa-angle-left"></i></a>
@@ -629,6 +629,7 @@ $('#test').submit(function(){
                  <li class="allType" data-value="0"><span>全部分类</span><i class="fa fa-angle-down"></i></li>
                  <li class="orderType" data-value="1"><span>排序规则</span><i class="fa fa-angle-down"></i></li>
                 <li class="activeType" data-value="2"><span>活动状态</span><i class="fa fa-angle-down"></i></li>
+                 <li class="liveType" data-value="3"><span>全部直播</span><i class="fa fa-angle-down"></i></li>
 
             </ul>
         </div>
@@ -679,8 +680,6 @@ $('#test').submit(function(){
                          <li data-type="allType" id="allType9" data-value="9"><span>运动健身</span><i class="fa fa-check"></i></li>
                         </ul>
                     </li>
-
-
                       <li class="sort-wrapper">
                         <ul class="dropdown-list">
                             <li data-type="orderType" id="orderType0" data-value="0" class="active"><span>排序规则</span><i class="fa fa-check"></i></li>
@@ -688,12 +687,20 @@ $('#test').submit(function(){
                             <li data-type="orderType" id="orderType2" data-value="2"><span>最新发布</span><i class="fa fa-check"></i></li>
                         </ul>
                     </li>
-                             <li class="sort-wrapper">
+                    <li class="sort-wrapper">
                         <ul class="dropdown-list">
                             <li data-type="activeType" id="activeType0" data-value="0" class="active"><span>活动状态</span><i class="fa fa-check"></i></li>
                             <li data-type="activeType" id="activeType1" data-value="1"><span>募集中</span><i class="fa fa-check"></i></li>
                             <li data-type="activeType" id="activeType2" data-value="2"><span>已结束</span><i class="fa fa-check"></i></li>
                         </ul>
+                    </li>
+                    <!--添加代码 3月16 需要修改宽度比例 -->
+                   <li class="sort-wrapper">
+                        <ul class="dropdown-list">
+                            <li data-type="liveType" id="liveType0" data-value="0" class="active"><span>全部直播</span><i class="fa fa-check"></i></li>
+                         	<li data-type="liveType" id="liveType1" data-value="1"><span>线下直播</span><i class="fa fa-check"></i></li>
+                            <li data-type="liveType" id="liveType2" data-value="2"><span>线上直播</span><i class="fa fa-check"></i></li>
+        					</ul>
                     </li>
                 </ul>
             </div>
@@ -714,8 +721,11 @@ $('#test').submit(function(){
                     </a>  
                     <a href="/main/info_detail/<?php echo $value['id'];?>" class="to-detail"> 
                         <div class="ad_pic error">    
+                        		<!--修改此处直播状态 gongkun -->
                             <img class="lazy" src="<?php echo strstr($value['image'],$url) ? $value['image'] : $url.$value['image'];?>" data-original="<?php echo $value['image'];?>" alt="" style="display: block;">     
-                            <span class="<?php if( $value['status'] == 1 ):?>wait<?php elseif( $value['status'] == 2 ):?>ing<?php else:?>end<?php endif;?> clear"><i></i><?php echo get_info_status($value['status']);?></span>  
+                            <span class="<?php if( $value['status'] == 1 ):?>wait<?php elseif( $value['status'] == 2 ):?>ing<?php else:?>end<?php endif;?> clear"><i></i><?php echo get_info_status($value['status']).'  '.get_info_lives($value['live_type']);?></span>  
+                            	<!--<span class="<?php if( $value['status'] == 1 ):?>wait<?php elseif( $value['status'] == 2 ):?>ing<?php else:?>end<?php endif;?> clear"><i></i><?php echo 线上直播;?></span>-->  
+                            	
                         </div>
                     </a>  
                     <a href="/main/info_detail/<?php echo $value['id'];?>" class="to-detail">     
@@ -737,7 +747,7 @@ $('#test').submit(function(){
         <p class="getmore"><i class="fa fa-spinner fa-pulse fa-fw margin-bottom" style="padding:0"></i>Loading</p>
         <?php endif;?>
         </div>
-
+<!--只是相当于用form进行提交操作 没有实际用处-->
         <div id="loadactivity" style="display: none;"><i class="fa fa-spinner fa-pulse fa-fw margin-bottom" style="padding:0"></i>Loading...</div>
         <div class="bottom_div"></div>
         <input type="hidden" id="page" value="2">
@@ -746,7 +756,8 @@ $('#test').submit(function(){
             <input type="hidden" name='paixu' id='paixu' value=''>
             <input type="hidden" name='leixing' id='leixing' value=''>
             <input type="hidden" name='zhuangtai' id='zhuangtai' value=''>
-           
+            <input type="hidden" name='zhibo' id='zhibo' value=''>
+            	
             <!-- <input type="text"> -->
         </form>
 
@@ -796,59 +807,89 @@ $(".dropdown-list li").click(function(res){
     $("."+type).find('span').text(txt);
     $("."+type).attr('data-value',value);
     // setCookie(type,value,3600);
-    //修改数据操作
+    //说明: status zhuangtai 是募集 category  leixing是类型排序  orderby paixu是排序规则  字段live zhibo 是线上还是线下
     // getResource();
     var businessType=['亚洲','欧洲','非洲','大洋洲','美洲'];
     var sortType=['Less Class 4','Class 5','5k-1W'];
     var soType=['Less 5k','5k-1W'];
-    var orderType=['view','ctime'];
+    var orderType=['view','ctime'];  
     var activeType=['','1','0'];
+    var liveType=['','2','3'];
     var val='action=get_event_list';
-
-       if(type=='orderType'){
+	//排序规则
+    if(type=='orderType'){
         var  orderby=orderType[value-1];
         val+='&orderby='+orderby;
         $('#paixu').val(orderby)
         var status=$('#zhuangtai').val();
-       var leixing=$('#leixing').val();
-
+        var leixing=$('#leixing').val();
+        var zhibo=$('#zhibo').val();
         if(status){
             val+='&status='+status;
         }
         if(leixing){
-           val+='$category='+leixing
+//         val+='$category='+leixing;
+		   val+='&category='+leixing;
         }
-
+        if(zhibo){
+        		val+='&livetype='+zhibo;
+        }
+	//活动状态
     }else if(type=='activeType'){
         var  status=activeType[value];
-
         val+='&status='+status;
         $('#zhuangtai').val(status)
         var orderby=$('#paixu').val();
-         var leixing=$('#leixing').val();
-
+        var leixing=$('#leixing').val();
+        var zhibo=$('#zhibo').val();
 
         if(orderby){
             val+='&orderby='+orderby;
         }
         if(leixing){
-           val+='$category='+leixing
+//         val+='$category='+leixing
+		   val+='&category='+leixing
+        }
+        if(zhibo){
+        		val+='&livetype='+zhibo;
+        }
+	//直播排序 gongkun
+   }else if(type=='liveType'){
+        var  zhibo=liveType[value];
+        val+='&livetype='+zhibo;
+        $('#zhibo').val(zhibo)
+        var orderby=$('#paixu').val();
+        var status=$('#zhuangtai').val();
+        var leixing=$('#leixing').val();
+
+	    if(status){
+        		val+='&status='+status;
+        }
+        if(orderby){
+            val+='&orderby='+orderby;
+        }
+        if(leixing){
+//         val+='$category='+leixing
+		   val+='&category='+leixing
         }
 
-
-    }else if(type=='allType'){
+   }else if(type=='allType'){
         value=value==0?"":value;
          val+='&category='+value;
           $('#leixing').val(value)
-            var orderby=$('#paixu').val();
-              var status=$('#zhuangtai').val();
-              if(orderby){
-            val+='&orderby='+orderby;
-        } 
+          var orderby=$('#paixu').val();
+          var status=$('#zhuangtai').val();
+          var zhibo=$('#zhibo').val();
+   
          if(orderby){
             val+='&orderby='+orderby;
+        } 
+         if(status){
+            val+='&status='+status;
         }
-
+        if(zhibo){
+        		val+='&livetype='+zhibo;
+        }
 
     }
     // if(type=='businessType'){
@@ -897,6 +938,7 @@ $(".dropdown-list li").click(function(res){
     //     }
     //     // $('#shaixuan3').submit()
     // }
+   // alert(val);
     $.ajax({
         url:'/api/event',
         data:val,
@@ -926,14 +968,22 @@ $(".dropdown-list li").click(function(res){
                 str+='</div></a><a href="/main/info_detail/'+info.id+'" class="to-detail"><div class="ad_pic error"><img class="lazy" src="'+info.image+'" data-original="" alt="" style="display: block;"><span class="';
                 if(info.status==1){
                     str+='wait';
-                    status='募集中';
+                    status='募集中  ';
                 }else if(info.status==2){
                     str+='ing'
-                    status='进行中';
+                    status='进行中  ';
                 }else{
                     str+='end'
-                    status='已结束';
+                    status='已结束  ';
                 }
+                if(info.live_type == 2){
+                    status=status+'线上直播';
+                }else if(info.live_type == 3){
+                    status=status+'线下直播';
+                }else{
+                    status=status+'线上线下';
+                }
+                
 
                 str+=' clear"><i></i>'+status+'</span></div></a><a href="/main/info_detail/'+info.id+'" class="to-detail"><div class="title"> <p>'+info.title+'</p></div><div class="ad_info clear"><span>活动时间:'+info.start_time+'</span><span>活动地点:'+info.address+'</span><span>活动人数:'+join_count+'/'+info.need_num+'人</span><span>报名费用:'+info.single_price+'元/人</span></div></a></li>';
 
